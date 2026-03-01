@@ -86,6 +86,7 @@ cd ciphervault
 
 Then simply open:
 
+```bash
 index.html
 
 Or use a local server (recommended):
