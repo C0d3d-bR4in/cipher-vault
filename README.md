@@ -1,103 +1,86 @@
-🔐 CipherVault
+# 🔐 CipherVault
 
-Client-side file encryption • Zero-knowledge • No server uploads
+> Client-side file encryption • Zero-knowledge • No server uploads
 
 CipherVault is a privacy-focused, browser-based encryption toolkit that allows users to securely encrypt and decrypt files directly in their browser. All cryptographic operations are performed client-side — no files are uploaded to any server.
 
-🚀 Features
-🔒 Encrypt
+---
 
-AES-256-GCM file encryption
+## 🚀 Features
 
-Password-based key derivation
+### 🔒 Encrypt
+- AES-256-GCM file encryption
+- Password-based key derivation
+- Secure encrypted file download
+- 100% in-browser processing
 
-Secure download of encrypted file
+### 🔓 Decrypt
+- Unlock `.vault` files using password
+- Integrity verification via GCM authentication
+- Zero server interaction
 
-100% in-browser processing
+### 🧪 Advanced Lab
+- Steganography module
+- Challenge mode
+- Multi-layer encryption
+- Experimental cryptographic tools
 
-🔓 Decrypt
+### 📝 Text Vault
+- Encrypted notepad
+- Write → Lock → Download
+- Decrypt later with password
 
-Unlock .vault files using password
+### 🗂 Dual Vault (CVLT v2)
+- Dual-container encryption
+- Plausible deniability architecture
+- Hidden secure compartment
+- Designed for advanced threat scenarios
 
-Integrity verification via GCM authentication
+---
 
-Zero server interaction
+## 🛡 Security Model
 
-🧪 Advanced Lab
+CipherVault is built with a zero-knowledge architecture.
 
-Steganography module
+- AES-256-GCM encryption
+- PBKDF2 / Argon2-based key derivation (configurable)
+- Random salt and IV per encryption
+- Authenticated encryption (tamper protection)
+- No telemetry
+- No tracking
+- No server uploads
 
-Challenge mode
+All cryptographic operations are performed using the Web Crypto API inside the browser.
 
-Multi-layer encryption experiments
+---
 
-📝 Text Vault
+## 🧠 How It Works
 
-Encrypted notepad
+1. Select a file to encrypt or decrypt
+2. Enter your secret password
+3. Processing happens entirely in-browser
+4. Download the processed file
 
-Write → Lock → Download
+---
 
-Decrypt later with password
+## 🏗 Tech Stack
 
-🗂 Dual Vault (CVLT v2)
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Web Crypto API
+- Client-side Blob processing
+- Static architecture (no backend required)
 
-Dual-container encryption
+---
 
-Plausible deniability architecture
+## 📦 Installation Guide
 
-Hidden secure compartment
+CipherVault runs as a static website.
 
-Designed for advanced threat scenarios
+### Option 1: Clone and Run Locally
 
-🛡 Security Model
-
-AES-256-GCM encryption
-
-PBKDF2 / Argon2-based key derivation (configurable)
-
-Random salt + IV per encryption
-
-Authenticated encryption (prevents tampering)
-
-Zero-knowledge architecture
-
-No telemetry
-
-No server uploads
-
-No tracking
-
-All cryptographic operations happen inside the browser using Web Crypto API.
-
-🧠 How It Works
-
-Select a file to encrypt or decrypt
-
-Enter your secret password
-
-Process happens entirely in-browser
-
-Download the processed file
-
-🏗 Tech Stack
-
-HTML5
-
-CSS3
-
-Vanilla JavaScript
-
-Web Crypto API
-
-Client-side Blob processing
-
-No backend required
-
-📦 Installation Guide
-
-CipherVault can run as a static website.
-
-Option 1: Clone and Run Locally
+```bash
 git clone https://github.com/yourusername/ciphervault.git
 cd ciphervault
 
